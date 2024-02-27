@@ -1,0 +1,11 @@
+# ninja log v5
+5	507	7307559346031717	CMakeFiles/DevicesOOP.dir/Mouse.cpp.obj	66ee6e82c3854734
+2	368	7307559961921333	CMakeFiles/DevicesOOP.dir/Keyboard.cpp.obj	e3519e39304642ea
+2	347	7307559401284357	CMakeFiles/DevicesOOP.dir/main.cpp.obj	b7e9354f3b9f9304
+12	675	7307559347741513	CMakeFiles/DevicesOOP.dir/Headphones.cpp.obj	f56b0f64be2475ea
+368	448	7307559962689987	DevicesOOP.exe	d6e89348ae243cd0
+11	591	7307565724997765	CMakeFiles/DevicesOOP.dir/Headphones.cpp.obj	af90f1fb75f8ee09
+6	676	7307565725849507	CMakeFiles/DevicesOOP.dir/Keyboard.cpp.obj	69dae3cf4a84915f
+1	677	7307565725869475	CMakeFiles/DevicesOOP.dir/main.cpp.obj	47db000c09285f7
+16	679	7307565725879416	CMakeFiles/DevicesOOP.dir/Mouse.cpp.obj	4d62ca9facd8707b
+679	779	7307565726830575	DevicesOOP.exe	8d05a1d3067e47e0
