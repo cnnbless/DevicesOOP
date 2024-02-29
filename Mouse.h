@@ -16,6 +16,7 @@ private:
     float weight;
     string type_of_material;
     bool wireless;
+    static int amountOfMouses;
 
 public:
     void set_name();
@@ -27,6 +28,18 @@ public:
     void set_wireless();
     void get_wireless();
     void info();
+    void get_AmountOfMice();
+
+    friend std::ostream &operator<<(std::ostream &os, const Mouse &mouse);
+    friend std::istream &operator>>(std::istream &os, Mouse &mouse);
+
+    Mouse &operator = (const Mouse &other);
+    Mouse operator +(float num);
+    Mouse operator -(float num);
+    Mouse operator +=(float num);
+    Mouse operator -= (float num);
+    Mouse operator --();
+    Mouse operator ++();
 
     Mouse();
     Mouse(string NameOfMouse);
