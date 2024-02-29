@@ -1,6 +1,3 @@
-//
-// Created by Endi on 27.02.2024.
-//
 
 #include "Headphones.h"
 #include <iostream>
@@ -75,6 +72,12 @@ Headphones::Headphones(std::string &&NameOfKeyboard, float Weight, std::string &
 {
     cout<<"called constructor default"<<endl;
 }
+
+Headphones::Headphones(const Headphones&& other) noexcept: name(std::move(other.name)), weight(other.weight), type_of_material(std::move(other.type_of_material)), microphone(other.microphone) {
+
+    cout << "move constructor was called"<<endl;
+}
+
 Headphones::~Headphones(){
     cout<<"called Headphones destructor"<<endl;
 }
