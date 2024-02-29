@@ -1,74 +1,79 @@
-//
-// Created by Endi on 27.02.2024.
-//
-
 #include "Keyboard.h"
 #include <iostream>
 
 void Keyboard::set_name()
 {
-    cout<<"Введіть назву клавіатури: ";
+    cout<<"Enter the name of keyoard: ";
     string NAME;
     cin>>NAME;
     name=NAME;
 }
-void Keyboard::get_name()
+void Keyboard::get_name() const
 {
-    cout<<"Назва клавіатури: "<<name<<endl;
+    cout<<"Nam eof Keyboard: "<<name<<endl;
 }
 void Keyboard::set_TypeOfMaterial()
 {
-    cout<<"Введіть тип матеріалу клавіатури: ";
+    cout<<"Enter Material of keyboard: ";
     string TYPE;
     cin>>TYPE;
     type_of_material=TYPE;
 }
-void Keyboard::get_TypeOfMaterial()
+void Keyboard::get_TypeOfMaterial() const
 {
-    cout<<"Тип матеріала клавіатури: "<<type_of_material<<endl;
+    cout<<"Material of Keyboard: "<<type_of_material<<endl;
 }
 void Keyboard::set_weight()
 {
-    cout<<"Введіть вагу клавіатури: ";
+    cout<<"Enter the weight: ";
     float WEIGHT;
     cin>>WEIGHT;
     weight=WEIGHT;
 }
-void Keyboard::get_weight()
+void Keyboard::get_weight() const
 {
-    cout<<"Вага клавіатури: "<<weight<<" кг"<<endl;
+    cout<<"Weight of the Keyboard: "<<weight<<" kg"<<endl;
 }
-void Keyboard::info()
+void Keyboard::info() const
 {
-    cout<<"Назва клавіатури: "<<name
-        <<"\nВага клавіатури: "<<weight<<" кг"
-        <<"\nТип матеріалу клавіатури: "<<type_of_material<<endl<<endl;
+    cout<<"Name of Keyboard: "<<name
+        <<"\nWeight of Keyboard: "<<weight<<" kg"
+        <<"\nMaterial of Keyboard: "<<type_of_material<<endl<<endl;
+
 }
 
 Keyboard::Keyboard()
 {
-    name="None";
-    weight=0;
-    type_of_material="None";
+    name = "None";
+    weight = 0;
+    type_of_material = "None";
 }
-Keyboard::Keyboard(std::string &&NameOfKeyboard)
+Keyboard::Keyboard(std::string &&name)
 {
-    name=NameOfKeyboard;
-    weight=0;
-    type_of_material="None";
+    this->name= name;
+    this->weight =0;
+    this->type_of_material ="None";
 }
-Keyboard::Keyboard(std::string &&NameOfKeyboard, float Weight)
+Keyboard::Keyboard(std::string &&name, float weight)
 {
-    name=NameOfKeyboard;
-    weight=Weight;
-    type_of_material="None";
+    this->name= name;
+    this->weight= weight;
+    this->type_of_material;
 }
-Keyboard::Keyboard(std::string &&NameOfKeyboard, float Weight, std::string &&NameTypeOfMaterial)
+Keyboard::Keyboard(std::string &&name, float weight, std::string &&type_of_material)
 {
-    name=NameOfKeyboard;
-    weight=Weight;
-    type_of_material=NameTypeOfMaterial;
+    this->name = name;
+    this->weight = weight;
+    this->type_of_material = type_of_material;
 }
+Keyboard::Keyboard(const Keyboard& other) {
+    name = other.name;
+    weight = other.weight;
+    type_of_material = other.type_of_material;
+    cout << "constructor copy enabled" << endl;
+
+}
+
 Keyboard::~Keyboard()
 {
     cout<<"called Keyboard destructor"<<endl;
