@@ -2,35 +2,94 @@
 #include "Mouse.h"
 #include "Keyboard.h"
 #include "Headphones.h"
-
+#include "MechanicKeyboard.h"
+#include "InEarHeadphones.h"
+#include "GamingMouse.h"
 using namespace std;
 int main() {
-    //Keyboard warmila("Warmila",2,"plactic");
-    //Mouse logitech("Logitech",0.3,"aluminium",true);
-    //Headphones hyperx("HyperX",10,"metal",true);
-    //warmila.info();
-    //logitech.info();
-    //hyperx.info();
-    //
-   /* const Keyboard Warmila("warmila", 123, "plastic");
-    Warmila.get_TypeOfMaterial();*/
-/*   Mouse Hyperx("222", 222, "222", true);
-   Mouse vadim("212", 222, "222", true);
-   Logitech.get_AmountOfMice();*/
-/*    Mouse Logitech("123", 123, "123", true);
-    cin>>Logitech;
-    cout << Logitech;*/
-/*
-Mouse a("111", 0, "plastic");
-a+4;
-cout << a;
-a+=29.2;
-cout << a;
-a-3;
-cout << a;
-a-=12.2;
-cout << a;
-*/
+//  Copy constructor
+//    Keyboard warmila("Warmila",2,"plastic");
+//    Keyboard jonson(warmila);
+//    jonson.set_name("Jonson");
+//    warmila.info();
+//    jonson.info();
+
+// Move constructor
+//    Headphones apple("Apple",0.6,"plastic",true);
+//    Headphones sony(move(apple));
+//    sony.set_name("Sony");
+//    sony.info();
+//    apple.info();
+
+//  модифікатор const
+//    const Keyboard warmila("Warmila",1.2,"plastic");
+//    Keyboard doss("Doss",2.0,"metal");
+//    doss.set_weight(3);
+//    warmila.info();
+//    doss.info();
+
+//  модифікатор static
+//    Mouse apple("Apple",0.4,"plastic");
+//    cout<<apple.get_amountOfMice()<<endl;
+//    Mouse a;
+//    cout<<a.get_amountOfMice()<<endl;
+//    Mouse b;
+//    cout<<b.get_amountOfMice()<<endl;
+
+//  перевантаження унарного оператора
+//    Mouse apple("Apple",0.5,"plastic", true);
+//    --apple;
+//    apple.info();
+//    ++apple;
+//    ++apple;
+//    apple.info();
+
+//  перевантаження бінарного оператора
+//    Mouse apple("Apple",0.5,"plastic", true);
+//    apple+0.6;
+//    apple.info();
+//    apple-0.9;
+//    apple.info();
+//    apple-=0.1;
+//    apple.info();
+//    apple+=1;
+//    apple.info();
+
+//  Оператор присвоєння =
+//    Mouse apple("Apple",0.5,"plastic", true);
+//    Mouse basic;
+//    basic=apple;
+//    basic.set_name("Basic");
+//    basic.info();
+//    apple.info();
+
+//  перевантаження дружніх операторів stream exctraction та stream insertion (>>, <<)
+//    Mouse apple;
+//    cin>>apple;
+//    cout<<apple;
+
+//    Наслідування Copy constructor
+//    MechanicKeyboard warmila("Warmila",3,"metal","black");
+//    warmila.info();
+//    MechanicKeyboard rajion(warmila);
+//    rajion.set_name("Rajion");
+//    rajion.info();
+
+//  Наслідування Move constructor
+//    InEarHeadphones a("a",1.9,"plastic",true,true);
+//    InEarHeadphones b(move(a));
+//    b.set_name("b");
+//    b.info();
+//    a.info();
+
+//  Наслідування оператора =
+//    GamingMouse cros("Cros",0.8,"plastic",true,3, false);
+//    GamingMouse royal;
+//    royal=cros;
+//    royal.set_AdditionalButtons(4);
+//    royal.set_name("Royal");
+//    cros.info();
+//    royal.info();
 
     return 0;
 }
